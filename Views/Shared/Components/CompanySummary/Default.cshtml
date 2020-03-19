@@ -1,0 +1,14 @@
+﻿@using Three.Models
+@model CompanySummary
+
+    <div class="small">
+        <div class="row h3">@ViewBag.Title</div>
+        <div class="row">
+            <div class="col-md-8">Total Num</div>
+            <div class="col-md-4">@Model.EmployeeCount</div>
+        </div>
+        <div class="row">
+        <div class="col-md-8">Average Employee Count</div>
+        <div class="col-md-4">@Model.AverageDepartmentEmployeeCount</div>
+    </div>
+</div>

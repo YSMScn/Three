@@ -1,0 +1,22 @@
+﻿@using Three.Models
+@model IEnumerable<Employee>
+
+<div class="row">
+    <div class="col-md-10 offset-md-2">
+        <table class="table">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Is Fired</th>
+                <th>Action</th>
+            </tr>
+            @Html.DisplayForModel()
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 offset-md-2">
+        <a asp-action="Add" asp-route-DepartmentId="@ViewBag.DepartmentId">Add</a>
+    </div>
+</div>

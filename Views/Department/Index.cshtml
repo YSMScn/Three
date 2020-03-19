@@ -1,0 +1,24 @@
+﻿@using Three.Models;
+@model IEnumerable<Department>
+
+<div class="row">
+    <div class="col-md-10 offset-md-2">
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Employee Count</th>
+                <th>Action</th>
+            </tr>
+            @Html.DisplayForModel()
+        </table>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        @await Component.InvokeAsync("CompanySummary", new { title = "Summary"})
+    </div>
+    <div class="col-md-4 offset-md-2">
+        <a asp-action="Add">Add</a>
+    </div>
+</div>

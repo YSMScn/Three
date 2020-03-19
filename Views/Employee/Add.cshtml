@@ -1,0 +1,36 @@
+﻿@using Three.Models
+@model Employee
+
+    <form asp-action="Add">
+        <input type="hidden" asp-for="DepartmentId" />
+
+        <div class="row form-group">
+            <div class="col-md-2 offset-md-2">
+                <label asp-for="FirstName"></label>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" asp-for="FirstName" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-2 offset-md-2">
+                <label asp-for="LastName"></label>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" asp-for="LastName" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-md-2 offset-md-2">
+                <label asp-for="Gender"></label>
+            </div>
+            <div class="col-md-6">
+                <select class="form-control" asp-for="Gender" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 offset-md-2">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </form>
