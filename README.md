@@ -3,7 +3,7 @@
 ref:https://www.bilibili.com/video/av65313713?p=1<br>
 This is a source code of Yang Xu(MicroSoft MVP)'s ASP.Net 3.X tutorial,p1 to p6<br>
 I wrote all the code by hand during study<br>
-Variables name might be different, but the project works perfectly<br>
+Variables names might be different, but the project works perfectly<br>
 
 
 
